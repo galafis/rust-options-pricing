@@ -1,0 +1,25 @@
+graph LR
+    A[Market Data] --> B[Black-Scholes Model]
+    B --> C[Option Price]
+    B --> D[Greeks]
+    
+    D --> E[Delta Δ]
+    D --> F[Gamma Γ]
+    D --> G[Vega ν]
+    D --> H[Theta Θ]
+    D --> I[Rho ρ]
+    
+    C --> J[Implied Volatility]
+    J --> K[Newton-Raphson]
+    K --> L[Converged IV]
+    
+    A --> M[Monte Carlo]
+    M --> N[Simulate Paths]
+    N --> O[Average Payoff]
+    O --> P[Option Value]
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#e1ffe1
+    style D fill:#f0e1ff
+    style M fill:#ffe1e1

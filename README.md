@@ -37,6 +37,15 @@ Perfect for quantitative traders, risk managers, and financial engineers who nee
 - **Finite Difference**: Numerical Greeks for Monte Carlo
 - **High Performance**: Microsecond-level calculations
 
+### 🏗️ Architecture
+
+![Black-Scholes Flow](docs/images/black_scholes_flow.png)
+
+The library provides multiple pricing approaches:
+- **Black-Scholes**: Analytical solution with full Greeks calculation
+- **Implied Volatility**: Newton-Raphson iterative solver
+- **Monte Carlo**: Simulation-based pricing with confidence intervals
+
 ### 🚀 Quick Start
 
 #### Installation
