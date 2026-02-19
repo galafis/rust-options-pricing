@@ -46,6 +46,26 @@ The library provides multiple pricing approaches:
 - **Implied Volatility**: Newton-Raphson iterative solver
 - **Monte Carlo**: Simulation-based pricing with confidence intervals
 
+```mermaid
+flowchart TD
+    A[Option Parameters\nSpot / Strike / Expiry / Rate / Vol] --> B{Pricing Model}
+    B --> C[Black-Scholes\nAnalytical Solution]
+    B --> D[Binomial Tree\nAmerican Options]
+    B --> E[Monte Carlo\nSimulation]
+    C --> F[Greeks Calculation\nDelta / Gamma / Vega / Theta / Rho]
+    D --> F
+    E --> F
+    F --> G[Risk Analysis\nImplied Vol / P&L / Hedging]
+
+    style A fill:#1a1a2e,stroke:#e94560,color:#fff
+    style B fill:#16213e,stroke:#0f3460,color:#fff
+    style C fill:#0f3460,stroke:#533483,color:#fff
+    style D fill:#0f3460,stroke:#533483,color:#fff
+    style E fill:#0f3460,stroke:#533483,color:#fff
+    style F fill:#533483,stroke:#e94560,color:#fff
+    style G fill:#1a1a2e,stroke:#e94560,color:#fff
+```
+
 ### 🚀 Quick Start
 
 #### Installation
